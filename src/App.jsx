@@ -4,7 +4,28 @@ import NoProjectSelected  from './components/NoProjectSelected.jsx';
 import NewProject from './components/NewProject.jsx';
 
 const App = () => {
-  const [projectsState, setProjectsState] = useState({
+  // const [projectsState, setProjectsState] = useState({
+  //   selectedProjectId: undefined,
+  //   projects: []
+  // });
+
+  // function handleAddProject() {
+  //   setProjectsState((prevState) => {
+  //     return {
+  //       ...prevState,
+  //       selectedProjectId: null,
+  //     }
+  //   }) 
+  // };
+
+  // let content;
+  // if (projectsState.selectedProjectId === null) {
+  //   content = <NewProject />
+  // } else if (projectsState.selectedProjectId === undefined) {
+  //   content = <NoProjectSelected onHandleAddProject={handleAddProject}/>
+  // }
+
+  const [ projectsState, setProjectsState] = useState({
     selectedProjectId: undefined,
     projects: []
   });
@@ -13,16 +34,16 @@ const App = () => {
     setProjectsState((prevState) => {
       return {
         ...prevState,
-        selectedProjectId: null,
+        selectedProjectId: null
       }
-    }) 
+    });
   };
 
   let content;
   if (projectsState.selectedProjectId === null) {
     content = <NewProject />
-  } else if (projectsState.selectedProjectId === undefined) {
-    content = <NoProjectSelected onHandleAddProject={handleAddProject}/>
+  } else if (projectsState.setProjectId === undefined) {
+    content = <NoProjectSelected onHandleAddProject={ handleAddProject }/>
   }
 
   return (
