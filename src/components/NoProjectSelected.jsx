@@ -16,8 +16,8 @@ const NoProjectSelected = ({ onHandleAddProject }) => {
         Select a project or get started with a new one
       </p>
       <p className="mt-8">
-        {/* <button onClick={ onHandleAddProject }>Create a new project</button> */}
-        <Button>Create a new project</Button>
+        { <Button onClick={ onHandleAddProject }>Create a new project</Button> }
+        {/* <Button>Create a new project</Button> */}
       </p>
     </div>
   )

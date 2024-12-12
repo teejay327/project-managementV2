@@ -9,7 +9,7 @@ const ProjectsSidebar = ({ onHandleAddProject }) => {
            hover:bg-stone-500">
           + Add project
         </button> */}
-        <Button>+ Add project</Button>
+        <Button onClick={ onHandleAddProject }>+ Add project</Button>
       </aside>
     )
 };

@@ -12,7 +12,7 @@ const Input = ({ label, textarea, ...props }) => {
   return (
     <p>
       <label>{ label }</label>
-      { textarea  ? <textarea className={classes} {...props} /> : <label className={classes} {...props}/> }
+      { textarea  ? <textarea className={ classes } { ...props } /> : <input className={ classes } { ...props }/> }
     </p>
   )
 };

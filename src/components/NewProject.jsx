@@ -21,7 +21,9 @@ const NewProject = () => {
         hover:bg-stone-400 hover:text-stone-200">Save</button></li>
       </menu>
       <div >
-        
+        <Input label="Title"/>
+        <Input label="Description" textarea/>
+        <Input label="Due date"/>
       </div>
     </div>
   )
