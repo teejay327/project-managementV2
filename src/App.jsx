@@ -28,6 +28,7 @@ const App = () => {
 
       return {
         ...prevState,
+        selectedProjectId: undefined,
         projects: [...prevState.projects, newProject]
       }
     })
@@ -44,7 +45,7 @@ const App = () => {
 
   return (
     <main className="h-screen my-8 flex gap-8">
-      <ProjectsSidebar onHandleAddProject={ handleStartAddProject }/>
+      <ProjectsSidebar onHandleAddProject={ handleStartAddProject } projects={projectsState.projects}/>
       { content }
     </main>
   );
