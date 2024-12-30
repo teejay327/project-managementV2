@@ -1,11 +1,8 @@
 
-const Button = ({ children, ...props }) => {
+const Button = () => {
 
   return (
-    <button className="px-4 py-2 text-sm md:text-base rounded-md bg-stone-700 text-stone-300
-    hover:bg-stone-500" { ...props }>
-      { children }
-    </button>
+
   )
 };
 
