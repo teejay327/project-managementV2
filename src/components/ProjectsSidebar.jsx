@@ -1,11 +1,11 @@
 import Button from './Button.jsx';
 
-const ProjectsSidebar = () => {
+const ProjectsSidebar = ({ onStartAddProject }) => {
 
     return (
       <aside className="w-1/3 px-8 py-16 font-bold bg-stone-600 text-stone-400 md:w-72 rounded-r-xl">
         <h2 className="mb-8 font-bold uppercase md:text-xl text-stone-200">Team projects</h2>
-        <Button>
+        <Button onClick={ onStartAddProject }>
           + Add project
         </Button>
       </aside>
