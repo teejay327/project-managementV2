@@ -9,8 +9,8 @@ const NewProject = ({ onAdd }) => {
 
   function handleSave() {
     const enteredTitle = title.current.value;
-    const enteredDescription = title.current.value;
-    const enteredDueDate = title.current.value;
+    const enteredDescription = description.current.value;
+    const enteredDueDate = dueDate.current.value;
 
     onAdd({
       title: enteredTitle,
@@ -20,7 +20,7 @@ const NewProject = ({ onAdd }) => {
   };
 
    return (
-    <div className="w-[35rem] mt-16">
+    <div className="w-[35rem] mt-12">
       <menu className="flex items-center justify-end gap-4 my-4">
         <li>
           <button className="text-stone-800 hover:text-stone-950">Cancel</button>
