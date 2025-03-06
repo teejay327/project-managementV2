@@ -7,7 +7,7 @@ const ProjectsSidebar = ({ onStartAddProject, projects }) => {
         <h2 className="mb-8 font-bold uppercase md:text-xl text-stone-200">Team projects</h2>
         <div>
           <Button onClick={ onStartAddProject }>
-            + Add project
+            + Add projects
           </Button>
         </div>
         <ul className="mt-8">
